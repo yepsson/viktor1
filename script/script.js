@@ -13,6 +13,9 @@ function saveHoroscope(){
         }
         if(results == true){
             viewHoroscope();
+        }
+        if(results == 'invalid'){
+            $("#content").html("Please enter a valid Socialnumber");
         }},
         error: function(err){
             alert("PROBLEM");
@@ -46,8 +49,12 @@ function saveHoroscope(){
             url: "./php/deletehoroscope.php",
             method: "DELETE",
         success: function(results){
-            $("#content").html(results)
-        },
+            if(results == true){
+                $("#content").html("Your Horoscope is now deleted!");
+            }
+            if(results == false){
+                $("#content").html("There is no Horoscope to Delete!");
+            }},
         error: function(err){
             alert("PROBLEM");
         }})

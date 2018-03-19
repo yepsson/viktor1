@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'PUT') {
         $key= true;
         echo "$key";
     }
-    if (!isset($_SESSION["mittHoroscop"])){
+    elseif (!isset($_SESSION["mittHoroscop"])){
 
     
         $key= false;

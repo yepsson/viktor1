@@ -3,7 +3,7 @@
     class zodiac{
         
         private $horoscope;
-        
+        private $valid = true;
 
         function __construct($date){
             
@@ -85,7 +85,8 @@
             }
             else{
 
-                $this->horoscope = "Plz enter a valid socialnumber";
+                $this->horoscope = null;
+                $this->valid = false;
             }
         }
         
@@ -93,9 +94,12 @@
         public function printSign(){
 
             return $this->horoscope;
-
+            
         }
 
+        public function isValid(){
+            return $this->valid;
+          }
 
     
     }

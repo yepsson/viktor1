@@ -6,13 +6,17 @@ include "class.php";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
-    if(!isset($_SESSION["mittHoroscop"])){
-        $sign = $horoscope->printSign();
+    if(isset($_SESSION["mittHoroscop"])){
 
-        if($sign === false){
-            echo "false";}
-        else{
-            $_SESSION["mittHoroscop"] = $sign;}
+        $key = false;
+        echo "$key";
+    }
+
+    if(!isset($_SESSION["mittHoroscop"])){
+        $_SESSION["mittHoroscop"] = $horoscope->printSign();
+
+        $key = true;
+        echo "$key";
     }
 }
 else{

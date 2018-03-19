@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'PUT') {
     }
     else{
         
-        echo "Det finns inget horoscope att uppdatera";
+        echo "There is no Horoscope to update!;
     }
 }
 

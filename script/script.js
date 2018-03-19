@@ -8,10 +8,10 @@ function saveHoroscope(){
             "socialnumber": $("#input").val()
         },
     success: function(results){
-        if(results == "false"){
-            $("#content").html("Invalid Date!");
+        if(results == false){
+            $("#content").html("you have already saved a horoscope!");
         }
-        else{
+        if(results == true){
             viewHoroscope();
         }},
         error: function(err){

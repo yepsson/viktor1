@@ -36,6 +36,9 @@ function saveHoroscope(){
             }
             if(results == false){
                 $("#content").html("There is no Horoscope to update!");
+            }
+            if(results == 'invalid'){
+                $("#content").html("Please enter a valid Socialnumber");
             }},
         error: function(err){
             alert("PROBLEM");

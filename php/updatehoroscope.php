@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'PUT') {
     }
     else{
         
-        echo "There is no Horoscope to update!;
+        echo "There is no Horoscope to update!";
     }
 }
 

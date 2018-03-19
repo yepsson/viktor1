@@ -15,7 +15,7 @@ function saveHoroscope(){
             viewHoroscope();
         }},
         error: function(err){
-            alert("shit");
+            alert("PROBLEM");
     }})
 }
 
@@ -35,7 +35,7 @@ function saveHoroscope(){
                 $("#content").html(results);
             }},
         error: function(err){
-            alert("shit");
+            alert("PROBLEM");
         }})
         
     }
@@ -49,7 +49,7 @@ function saveHoroscope(){
             $("#content").html(results)
         },
         error: function(err){
-            alert("shit");
+            alert("PROBLEM");
         }})
     }
 
@@ -62,7 +62,7 @@ function saveHoroscope(){
             $("#content").html(results)
         },
         error: function(err){
-            alert("shit");
+            alert("PROBLEM");
         }
         })
     }

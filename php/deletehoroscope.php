@@ -7,10 +7,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'DELETE') {
     if (isset($_SESSION["mittHoroscop"])){
     
         unset($_SESSION["mittHoroscop"]); 
-        echo "Ditt horoscope är nu borttaget";
+        echo "Your Horoscope is now deleted!";
     }
     else{
-        echo " Det finns inget horoscope att ta bort";
+        echo " There is no Horoscope to Delete!";
     }
 }
 

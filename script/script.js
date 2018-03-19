@@ -31,8 +31,8 @@ function saveHoroscope(){
             if(results == true){
                 viewHoroscope();
             }
-            else{
-                $("#content").html(results);
+            if(results == false){
+                $("#content").html("There is no Horoscope to update!");
             }},
         error: function(err){
             alert("PROBLEM");

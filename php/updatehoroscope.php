@@ -15,10 +15,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'PUT') {
         $key= true;
         echo "$key";
     }
-    else{
-        
-        echo "There is no Horoscope to update!";
+    if (!isset($_SESSION["mittHoroscop"])){
+
+    
+        $key= false;
+        echo "$key";
     }
+    
 }
 
 else{
